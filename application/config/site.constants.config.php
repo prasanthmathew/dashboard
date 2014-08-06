@@ -53,7 +53,7 @@ $config['FEEDBACK_FROM_EMAIL'] = 'abbnoreplytest@yopmail.com';
 //COPY RIGHT
 
 $config['COPY_RIGHT']  = '&copy; ' . date("Y") . ' All rights reserved. Verbat Technologies';
-$config['ENABLE_PROFILER'] = FALSE;
+$config['ENABLE_PROFILER'] = TRUE;//FALSE
 
 //Permission constants
 

@@ -49,12 +49,12 @@ $active_group = 'default';
 $active_record = TRUE;
 /*MYSQL
 /**
- * MySQL db Connection 
+ * MySQL db Connection */
  
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = 'abb';
+$db['default']['database'] = 'dashboard';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
@@ -68,37 +68,7 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
 
-/*MSSQL 
-$db['default']['hostname'] = '192.168.1.234\SQL2008';
 
-$db['default']['username'] = 'sa';
-$db['default']['password'] = '12345';
-$db['default']['database'] = 'abb';
-$db['default']['dbdriver'] = 'sqlsrv';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = FALSE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;*/
-
-/*MSSQL live*/ 
-$db['default']['hostname'] = '54.191.5.88';
-
-$db['default']['username'] = 'Abbusr';
-$db['default']['password'] = 'abbpwd123';
-$db['default']['database'] = 'abb';
-$db['default']['dbdriver'] = 'sqlsrv';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = FALSE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
 
 
 /* End of file database.php */

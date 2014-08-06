@@ -31,27 +31,32 @@
                         <header class="panel-heading text-center">
                             Sign in
                         </header>
-                        <form action="<?php echo site_url(); ?>" method="post" class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label">Email</label>
-                                <input type="email" placeholder="test@example.com" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label">Password</label>
-                                <input type="password" id="inputPassword" placeholder="Password" class="form-control">
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Keep me logged in
-                                </label>
-                            </div>
-                            <a href="<?php echo site_url(); ?>" class="pull-right m-t-xs"><small>Forgot password?</small></a>
-                            <button type="submit" class="btn btn-info">Sign in</button>
-                            <div class="line line-dashed"></div>                            
-                            <div class="line line-dashed"></div>
-                            <p class="text-muted text-center"><small>Do not have an account?</small></p>
-                            <a href="<?php echo site_url(); ?>" class="btn btn-white btn-block">Create an account</a>
-                        </form>
+                        <?php
+                        $attributes = array('class' => 'panel-body', 'id' => 'loginFormValidate', 'name' => 'loginFormValidate', 'enctype' => 'multipart/form-data');
+                        echo form_open('', $attributes);
+                        ?>
+                        <?php echo $this->ci_alerts->display('error'); ?><?php echo $this->ci_alerts->display('success'); ?>  <?php echo $message;?>    
+                        <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <?php echo form_input($identity);?>
+                            <?php echo form_error('identity'); ?>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <?php echo form_input($password);?>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?> Keep me logged in
+                            </label>
+                        </div>
+                        <a href="<?php echo site_url(); ?>" class="pull-right m-t-xs"><small>Forgot password?</small></a>
+                        <?php echo form_submit('submit', 'Sign in', 'class="btn btn-info"');?>
+                        <div class="line line-dashed"></div>                            
+                        <div class="line line-dashed"></div>
+                        <p class="text-muted text-center"><small>Do not have an account?</small></p>
+                        <a href="<?php echo site_url(); ?>" class="btn btn-white btn-block">Create an account</a>
+                        <?php echo form_close();?>
                     </section>
                 </div>
             </div>

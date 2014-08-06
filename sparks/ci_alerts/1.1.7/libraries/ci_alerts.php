@@ -70,7 +70,7 @@ class ci_alerts
 		if (config_item('remove_duplicates')) { $arr = array_unique($arr); }
 		
 		$arr[] = $msg;
-		$this->_ci->session->set_flashdata($type, $arr);
+		$this->_ci->session->set_flashdata($type, $arr);                
 	}
 	
 	// --------------------------------------------------------------------------
@@ -155,7 +155,7 @@ class ci_alerts
 				}
 				$out .= config_item('after_all');
 			}
-		}
+		}                
 		return $out;
 	}
 	

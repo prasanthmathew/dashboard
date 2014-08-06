@@ -18,6 +18,10 @@ if (!defined('BASEPATH'))
 
 
 $database_tables = array(
+    'HOSTNAME' => 'localhost',
+    'USERNAME' => 'root',
+    'PASSWORD' => '',
+    'DATABASE' => 'dashboard',
     'TBL_AAUTH_GROUPS' => 'abb_groups',
     'TBL_AAUTH_PERM_TO_GROUP_LANGUAGES' => 'abb_perm_to_group',
     'TBL_AAUTH_PERMS' => 'abb_perms',

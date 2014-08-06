@@ -90,7 +90,7 @@ $autoload['helper'] = array('url', 'file', 'form', 'string');
 |
 */
 
-$autoload['config'] = array('db.constants.config','site.constants.config', 'aauth');
+$autoload['config'] = array('db.constants.config','site.constants.config');
 
 
 /*
@@ -106,7 +106,7 @@ $autoload['config'] = array('db.constants.config','site.constants.config', 'aaut
 |
 */
 
-$autoload['language'] = array('message');
+$autoload['language'] = array('message', 'ion_auth');
 
 
 /*
